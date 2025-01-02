@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_names=favorite" />
+    <link rel="stylesheet" href="css/about.css">
+    <link rel="stylesheet" href="mediaquary/mediaquary-index.css">
+    <title>About</title>
+</head>
+<body>
+    <p id="header2">EVERYTHING IS PERSONAL. INCLUDING THIS BLOG.</p>
+    <h1 id="header1">Train of Thought</h1>
+    <nav>
+        <ul id="nav-links">
+            <li class="menu-btn"onclick="showsidebar()"><a href=""><img src="image/menu.svg" alt=""></a></li>
+            <li  class="hideOnMobile"><a href="index.html">Home</a></li>
+            <li  class="hideOnMobile"><a href="about.html">About</a></li>
+            <li  class="hideOnMobile"><a href="blog.html">My Blog</a></li>
+            <li  class="hideOnMobile"><a href="#contact-btn">Contact</a></li>
+            <li class="search-box">
+                <input type="search" name="option" id="option" placeholder="Search.............">
+            <a href="" class="icon"><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#000"><path d="M784-120 532-372q-30 24-69 38t-83 14q-109 0-184.5-75.5T120-580q0-109 75.5-184.5T380-840q109 0 184.5 75.5T640-580q0 44-14 83t-38 69l252 252-56 56ZM380-400q75 0 127.5-52.5T560-580q0-75-52.5-127.5T380-760q-75 0-127.5 52.5T200-580q0 75 52.5 127.5T380-400Z"/></svg></a></li>
+            <li class="social-nav">
+                <i><a href="https://web.facebook.com/" target="_blank"><img src="image/facebook-brands-solid.svg" alt=""></a></i>
+                <i><a href="https://www.instagram.com/"><img src="image/instagram-brands-solid.svg" alt=""></a></i>
+                <i><a href="https://x.com/home"><img src="image/x-twitter-brands-solid.svg" alt=""></a></i>
+                <i><a href="https://www.pinterest.com/"><img src="image/pinterest-brands-solid.svg" alt=""></a></i>
+            </li>
+        </ul>
+
+        <ul class="sidebar">
+            <li onclick="hidesidebar()"><a href=""><img src="image/close.svg" alt=""></a></li>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="blog.html">My Blog</a></li>
+            <li><a href="#contact-btn">Contact</a></li>
+        </ul>
+
+    </nav>
+    <!---- FR BLOG
+    <section class="sub-header">
+        <a href="">All Post</a>
+        <a href="">Travel</a>
+        <a href="">My Top 5</a>
+        <a href="">Art & Culture</a>
+    </section>-->
+
+    <!--Section 1-->
+    <div id="container" >
+        <div class="container-content">
+        <div class="image-container">
+            <img src="image/author.jpg" alt="">
+        </div>
+        <div class="text-container">
+            <h1>Hey! So Glad You're Here.</h1>
+            <p>I'm a paragraph. Click here to add your own text and edit me. It’s easy. Just click “Edit Text” or double click me to add your own content and make changes to the font. Feel free to drag and drop me anywhere you like on your page. I’m a great place for you to tell a story and let your users know a little more about you. <br><br>
+                
+            This is a great space to write a long text about your company and your services. You can use this space to go into a little more detail about your company. Talk about your team and what services you provide. Tell your visitors the story of how you came up with the idea for your business and what makes you different from your competitors. Make your company stand out and show your visitors who you are.</p>
+        </div>
+        </div>
+    </div>
+    <div id="contact-btn">
+        <a href="#nav-links"><img src="image/arrow.svg" alt=""></a>
+        <div class="contact-content">
+            <h2>Drop Me a Line, Let Me Know What You Think</h2>
+            <form action="">
+                <form action="#" method="post">
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="firstName">First Name *</label>
+                            <input type="text" id="firstName" name="firstName" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="lastName">Last Name *</label>
+                            <input type="text" id="lastName" name="lastName" required>
+                        </div>
+                    </div>
+                    <div class="form-group" id="text-email">
+                        <label for="email">Email *</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="message">Message</label>
+                        <textarea id="message" name="message" rows="4"></textarea>
+                    </div>
+                    <button type="submit" class="submit-btn">Submit</button>
+                </form>
+            </form>
+        </div>
+    </div>
+    <script src="index.js">
+    </script>
+</body>
+</html>
